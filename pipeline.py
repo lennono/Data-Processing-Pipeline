@@ -34,8 +34,8 @@ def gen_grep(pattern, lines):
 		if pat.search(line):
 			yield line
 
-listNumbers= open('../cust/in/customer6.csv', 'rt')
-filw= open('../cust/out/thecallsV6.csv', 'w')
+listNumbers= open('Location of input file', 'rt')
+filw= open('Location of files to search through', 'w')
 for number in listNumbers:
 	number = ''.join(number.split())
 	if len(number) >= 10: 
