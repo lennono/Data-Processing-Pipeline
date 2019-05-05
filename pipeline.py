@@ -44,7 +44,6 @@ for number in listNumbers:
 		lines = gen_concatenate(files)
 		pylines = gen_grep('(?i)'+ number, lines)
 		for line in pylines:
-			#print(line)
 			filw.write(line+"\n")
 			
 			
